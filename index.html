@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Thumbnail Extractor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>YouTube Thumbnail Extractor</h1>
+      <p>Enter a YouTube video URL and click 'Extract' to get the thumbnail:</p>
+      <input
+        type="text"
+        id="videoUrl"
+        placeholder="Enter YouTube video URL"
+        aria-label="YouTube Video URL"
+      />
+      <button id="extractButton">Extract</button>
+      <div id="thumbnail-container" aria-live="polite"></div>
+      <div id="loading-spinner" style="display: none">Loading...</div>
+      <div id="error-message" style="display: none"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
